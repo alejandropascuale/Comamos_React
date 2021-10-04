@@ -16,11 +16,11 @@
 html {
     height: 100%;
 }
-body {
+#root {
     background-color: #ebebeb;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .parallax {
@@ -799,9 +799,6 @@ footer ul, footer div {
     }
 }
 @media (min-width: 1024px) {
-    body main {
-    min-height: calc(100vh - 80px - 100px - 51px);
-    }
     .titulo-los-mas-elegidos, .titulo-nuestras-sugerencias {
         font-size: 2.8rem;
     }
@@ -863,14 +860,8 @@ footer ul, footer div {
     .fab {
     font-size: 20px;
     }
-    .footer {
-        height: 100px;
-    }
 }
 @media (min-width: 1440px) {
-    body main {
-    min-height: calc(100vh - 80px - 110px - 72px);
-    }
     .product-title {
         font-size: 24px;
     }
@@ -903,8 +894,5 @@ footer ul, footer div {
     }
     .fab {
     font-size: 22px;
-    }
-    .footer {
-        height: 110px;
     }
 }

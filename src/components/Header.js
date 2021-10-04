@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import logo from '../assets/img/Logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fas } from '@fortawesome/free-brands-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
     return ( 
@@ -8,7 +11,7 @@ function Header() {
             <nav>
                 <input type="checkbox" id="check" />
                 <label for="check" className="checkbtn">
-                    <i className="fas fa-bars"></i>
+                    <FontAwesomeIcon icon={faBars} />
                 </label>
                 <div className="flex">
                     <Link to="/" exact='true'>
