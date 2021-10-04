@@ -1,7 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, faHeart, faEye } from '@fortawesome/free-solid-svg-icons'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import BoxProduct from './BoxProduct';
 
 
 function Footer() {
@@ -29,16 +29,7 @@ function Footer() {
             </div>
             <section className="los-mas-elegidos">
             <h2 className="titulo-los-mas-elegidos">Los más elegidos</h2> 
-            <div className="contenedor-1">
-                <div className="box">
-                    <Link to=""><FontAwesomeIcon icon={faHeart} /></Link>
-                    <Link to="/product/"><FontAwesomeIcon icon={faEye} /></Link>
-                    <img src="" alt="" />
-                    <h3>Nombre Plato</h3>
-                    <span>Precio</span>
-                    <Link to="#" className="btn">Reservar</Link>
-                </div>
-            </div>
+            <BoxProduct />
             </section>
             <section>
                 <h2 className="titulo-nuestras-sugerencias">Nuestras sugerencias</h2>
