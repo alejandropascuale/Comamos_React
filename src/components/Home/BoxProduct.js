@@ -6,7 +6,6 @@ import { faHeart, faEye } from '@fortawesome/free-solid-svg-icons'
 function BoxProduct() {
     const [products, setProducts] = useState([]);
     useEffect(()=>{
-        console.log('Estoy montando el componente products');
         fetch('http://localhost:8000/api/products')
             .then(response => response.json())
             .then(data => {

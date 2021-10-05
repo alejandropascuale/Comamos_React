@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import BoxProduct from './BoxProduct';
+import HomeSliderProduct from './HomeSliderProduct';
+import HomeSliderBuisness from './HomeSliderBuisness';
 
 
 function Footer() {
@@ -28,36 +30,18 @@ function Footer() {
                 </div>
             </div>
             <section className="los-mas-elegidos">
-            <h2 className="titulo-los-mas-elegidos">Los más elegidos</h2> 
-            <BoxProduct />
+                <h2 className="titulo-los-mas-elegidos">Los más elegidos</h2> 
+                <BoxProduct />
             </section>
             <section>
                 <h2 className="titulo-nuestras-sugerencias">Nuestras sugerencias</h2>
                 <div className="nuestras-sugerencias">
-                    <div className="recomendations-format">
-                        <h2 className="recomendations-title">Para ir con...</h2>
-                        <div className="swiper mySwiper">
-                            <div className="swiper-wrapper">
-                                <img src="" alt="para compartir con" className="swiper-slide" />
-                            </div>
-                            <div className="swiper-button-next"></div>
-                            <div className="swiper-button-prev"></div>
-                        </div>
-                    </div>
-                    <div className="recomendations-format">
-                        <h2 className="recomendations-title">Por tu zona</h2>
-                        <div className="swiper mySwiper">
-                            <div className="swiper-wrapper">
-                                                    
-                                    <img src="" alt="para compartir con" className="swiper-slide" />
-                                
-                            </div>
-                            <div className="swiper-button-next"></div>
-                            <div className="swiper-button-prev"></div>
-                        </div>
-                    </div>
+                    <HomeSliderProduct />
+                    <HomeSliderBuisness />
                 </div>
             </section>
+            <script src="../js/shop.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         </main>
      );
 }
